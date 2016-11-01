@@ -1,0 +1,34 @@
+Basic Git functions to remember
+===============================
+	git clone
+	==========
+	->>> Clones a repository to your computer
+	->>> Example: git clone https://github.com/USERNAME/REPOSITORY.git
+
+	After run git clone does the following...
+		-creates a new folder called repo, which is initialized as a Git repository
+		-Creates a remote called origin which points to the url you cloned from
+		-All of the repos files and commits are downloaded there
+		-default branch(master) is then checked out
+
+	git fetch
+	=========
+	->>> Retrieves new work done by other people, without merging with your own work
+	->>> if you have a local repo with a remote URL, you can grab all new information with the function git fetch remotename, if not then you can add a new remote and fetch there.
+
+
+	git merge
+	=========
+	->>> Combines local changes with the changes made by others
+	->>> Used to merge remote-trackiong branch with your local branch
+	->>> Example use: git merge remotename/branchname
+
+	git pull
+	========
+	->>> Function that combines the uses of fetch and merge
+	->>> Example: git pull remotename branchname
+	*tips*
+	-make sure you commit all of your local work bufore running the pull command
+	- helps protect against merge conflicts that you cannot resolve, you would have to git merge --abort to take the branch back to where you didn't pull.
+
+
